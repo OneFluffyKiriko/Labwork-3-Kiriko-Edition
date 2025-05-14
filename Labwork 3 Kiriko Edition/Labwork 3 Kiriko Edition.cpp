@@ -11,8 +11,7 @@ int main() {
         cout << "Task control menu. \n Input 0 to stop program. \n Input numbers 1-3 to run the related task.\n";
         cin >> control;
         //calling in all future vars here for clarity
-        int a;
-        int s;
+        int a, s;
         switch (control) {
         case 0:
             cout << "Ending program\n Goodnight! >w<\n";
@@ -20,8 +19,8 @@ int main() {
         case 1:
             cout << "Running Task 1!\n";
             cout << "Input A and S:\n";
-            cin >> a;
-            cin >> s;
+            cin >> a >> s;
+            break;
 
             /*1. Створити програму згідно свого варіанта. Виконати завдання двома способами:
             А) з використанням скороченої форми оператора розгалуження if
@@ -34,6 +33,7 @@ int main() {
             необхідності вкладення if...else if*/
             /*7. Відомо радіус круга та довжину сторони квадрата. Визначити, чи поміститься круг у
             квадраті, порівнявши їх площі.*/
+            cout << "Runnung Task 2!\n";
             float rad;
             float side;
             cout << "Enter the radius of the circle: \n";
