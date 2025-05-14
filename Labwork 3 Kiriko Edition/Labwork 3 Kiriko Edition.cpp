@@ -45,7 +45,7 @@ int main() {
 
             }
             else
-                cout << "Nhhhhgfff!~ N-N-No...!! I-it wont f-fit!!~ >w<\n";
+                cout << "No! It wont fit... ＞︿＜ \n";
             break;
         case 3:
             /*3. Створити програму згідно свого варіанта. Використати конструкцію switch...case*/
