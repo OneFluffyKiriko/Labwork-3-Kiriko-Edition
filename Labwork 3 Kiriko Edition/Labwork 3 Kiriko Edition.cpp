@@ -20,6 +20,24 @@ int main() {
             cout << "Running Task 1!\n";
             cout << "Input A and S:\n";
             cin >> a >> s;
+            // Doing the assignment with just the if checks
+            if (s<0) {
+                cout << "Branch 1 output: " << (2*s)+(a*pow(s, 2)) << endl;
+            }
+            if (s == 0) {
+                cout << "Branch 1 output: " << sqrt(s + a - 15) + (8 * s * a);
+            }
+            if (s > 0) {
+                cout << "Branch 1 output: " << 12 - (s / (2 * a - 4));
+            }
+            //Now doing if else if checks for more efficient code.
+            if (s < 0) {
+                cout << "Branch 2 output: " << (2 * s) + (a * pow(s, 2)) << endl;
+            } 
+            else if (s > 0) {
+                cout << "Branch 2 output: " << 12 - (s / (2 * a - 4));
+            } 
+            else cout << "Branch 2 output: " << sqrt(s + a - 15) + (8 * s * a);
             break;
 
             /*1. Створити програму згідно свого варіанта. Виконати завдання двома способами:
