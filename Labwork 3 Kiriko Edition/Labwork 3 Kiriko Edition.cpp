@@ -2,16 +2,18 @@
 //
 
 #include <iostream>
+#include <math.h>
+
 using namespace std;
 int main() {
     //Making a switch case wrapped in a loop as the menu for tasks, instead of whatever horrible beast i had last time.
     //Should hopefully cause less headaches for everyone involved... =w=
     int control = 1;
     while (control > 0) {
-        cout << "Task control menu. \n Input 0 to stop program. \n Input numbers 1-3 to run the related task.\n";
+        cout << endl << "Task control menu. \n Input 0 to stop program. \n Input numbers 1-3 to run the related task.\n";
         cin >> control;
-        //calling in all future vars here for clarity
-        int a, s;
+        //Varible a and s as user input for task 1
+        float a, s;
         switch (control) {
         case 0:
             cout << "Ending program\n Goodnight! >w<\n";
@@ -24,20 +26,21 @@ int main() {
             if (s<0) {
                 cout << "Branch 1 output: " << (2*s)+(a*pow(s, 2)) << endl;
             }
-            if (s == 0) {
-                cout << "Branch 1 output: " << sqrt(s + a - 15) + (8 * s * a);
-            }
             if (s > 0) {
-                cout << "Branch 1 output: " << 12 - (s / (2 * a - 4));
+                cout << "Branch 3 output: " << 12 - (s / (2 * a - 4)) << endl;
+            }
+            //This function gives out an error if input of a is less than 15.
+            if (s == 0) {
+                cout << "Branch 2 output: " << sqrt(s + a - 15) + (8 * s * a) << endl;
             }
             //Now doing if else if checks for more efficient code.
             if (s < 0) {
-                cout << "Branch 2 output: " << (2 * s) + (a * pow(s, 2)) << endl;
+                cout << "Branch 1 mirrored output: " << (2 * s) + (a * pow(s, 2)) << endl;
             } 
             else if (s > 0) {
-                cout << "Branch 2 output: " << 12 - (s / (2 * a - 4));
+                cout << "Branch 2 mirrored output: " << 12 - (s / (2 * a - 4)) << endl;
             } 
-            else cout << "Branch 2 output: " << sqrt(s + a - 15) + (8 * s * a);
+            else cout << "Branch 3 mirrored output: " << sqrt(s + a - 15) + (8 * s * a) << endl;
             break;
 
             /*1. Створити програму згідно свого варіанта. Виконати завдання двома способами:
@@ -59,11 +62,11 @@ int main() {
             cout << "Enter the length of the side of the square: \n";
             cin >> side;
             if ((rad * 2) <= side) {
-                cout << "It fits! Yayy!\n";
+                cout << "It fits! Yayy! ^w^\n";
 
             }
             else
-                cout << "No! It wont fit... ＞︿＜ \n";
+                cout << "No! It wont fit... >n<\n";
             break;
         case 3:
             /*3. Створити програму згідно свого варіанта. Використати конструкцію switch...case*/
